@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="chat-wrap">
+    <div id="chat" class="chat"></div>
+
+    <form id="form" autocomplete="off">
+      <input id="input" placeholder="Type a message…" />
+      <button type="submit" aria-label="Send">➤</button>
+    </form>
+  </main>
+
+  <template id="msg-tpl">
+    <div class="msg">
+      <div class="bubble"></div>
+      <div class="meta">
+        <span class="time"></span>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
